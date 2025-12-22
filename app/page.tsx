@@ -3,8 +3,9 @@ import Image from "next/image";
 
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import { HiOutlineMenu } from "react-icons/hi";
+import { IoClose } from "react-icons/io5";
 import { IoIosStar } from "react-icons/io";
-import { FaFacebook, FaInstagram, FaLinkedin   } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,6 +24,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { useState } from "react";
 
 const playfairDisplay = Playfair_Display({
   display: "swap",
@@ -137,14 +139,18 @@ const testimonials = [
   },
 ];
 
+import Link from "next/link";
+
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="">
+    <div className={`relative ${isMenuOpen ? 'bg-overlay-openedmenu' : ''}`}>
       <header>
         <div className="topbar w-full text-sm bg-[#c19127] text-white text-center py-2">
           <span>beautiesushers@yahoo.co.uk</span>
         </div>
-        <nav className="flex items-center justify-between py-2 px-8 ">
+        <nav className="flex items-center justify-between py-2 px-8 relative">
           <div className="navlogo w-16">
             <Image
               className="w-full h-full object-cover -mt-1"
@@ -154,8 +160,16 @@ export default function Home() {
               alt="logo"
             />
           </div>
-          <div className="hamburger-menu">
-            <HiOutlineMenu size={24} />
+          <div className="hamburger-menu cursor-pointer z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <IoClose size={48} color="white"/> : <HiOutlineMenu size={40} />}
+          </div>
+          <div className={`menu-items-container bg-[#c19127] h-[50vh] p-10 w-full rounded-bl-2xl ${isMenuOpen ? 'translate-x-10 ': 'translate-x-100'} absolute  top-0  transition-all duration-500 z-10 `}>
+            <ul className="menu-items flex flex-col w-full h-full justify-center gap-10 text-[#ffffff] text-2xl ">
+              <li><Link href="#">Home</Link></li>
+              <li><Link href="#">About</Link></li>
+              <li><Link href="#">Services</Link></li>
+              <li><Link href="#">Contact</Link></li>
+            </ul>
           </div>
         </nav>
       </header>
@@ -187,11 +201,13 @@ export default function Home() {
                         className="w-full h-full rounded object-cover object-positioning"
                         src={`/images/${slide.eventImage}`}
                         alt="hero image"
-                        width={100}
-                        height={100}
+                        width={9999}
+                        height={9999}
                       />
                     </div>
-                    <div className="slide-text w-full md:w-[80vw] text-center absolute bottom-[10%] left-1/2 transform -translate-x-1/2 text-xl text-white bg-amber-500 p-5 rounded">
+                    <div
+                      className={`slide-text text-2xl w-full md:w-[80vw] text-center absolute bottom-[10%] left-1/2 transform -translate-x-1/2  text-white bg-[rgba(0,0,0,0.55)] p-5  ${playfairDisplay.className}`}
+                    >
                       {slide.eventName}
                     </div>
                   </div>
@@ -202,7 +218,13 @@ export default function Home() {
         </section>
         <section className="px-8 my-20">
           <div className="img-welcome mb-8 rounded overflow-hidden">
-            <Image className="w-full h-full " src={`/images/h19.jpeg`} alt="welcome pic" height={100} width={100} />
+            <Image
+              className="w-full h-full "
+              src={`/images/h19.jpeg`}
+              alt="welcome pic"
+              height={9999}
+              width={9999}
+            />
           </div>
           <div
             className={`heading ${playfairDisplay.className} text-2xl text-[#171717] `}
@@ -236,8 +258,8 @@ export default function Home() {
                       className=" rounded w-full h-full"
                       src={`/images/${service.img}`}
                       alt="welcome pic"
-                      height={100}
-                      width={100}
+                      height={9999}
+                      width={9999}
                     />
                   </div>
                   <div
@@ -388,7 +410,7 @@ export default function Home() {
                           height={100}
                         />
                       </div>
-                      <div className="slide-text w-full h-full text-left absolute top-0 text-xl text-white bg-[rgba(0,0,0,.45)] flex flex-col gap-2 justify-center items-start rounded p-5">
+                      <div className="slide-text w-full h-full text-left absolute top-0 text-xl text-white bg-[rgba(0,0,0,.5)] flex flex-col gap-2 justify-center items-start rounded p-5">
                         <div className={`${playfairDisplay.className} text-xl`}>
                           {testimony.clientName}
                         </div>
@@ -435,16 +457,20 @@ export default function Home() {
           </div>
         </div>
         <div className="footercol2 flex flex-col gap-4">
-            <h4 className={`${playfairDisplay.className} text-lg`}>Quick Links</h4>
-            <ul className="text-base text-[#3a3a3a] ">
-              <li>About</li>
-              <li>Services</li>
-              <li>Book Us Now</li>
-            </ul>
+          <h4 className={`${playfairDisplay.className} text-lg`}>
+            Quick Links
+          </h4>
+          <ul className="text-base text-[#3a3a3a] ">
+            <li>About</li>
+            <li>Services</li>
+            <li>Book Us Now</li>
+          </ul>
         </div>
         <div className="footercol3 flex flex-col gap-8">
           <div className=" flex flex-col gap-4">
-            <h4 className={`${playfairDisplay.className} text-lg`}>Contact Us</h4>
+            <h4 className={`${playfairDisplay.className} text-lg`}>
+              Contact Us
+            </h4>
             <ul className="text-base text-[#3a3a3a] max-w-xs">
               <li>h142, Road 234, Abuja</li>
               <li>+234 802 432 3232</li>
@@ -453,17 +479,27 @@ export default function Home() {
             </ul>
           </div>
           <div className="flex flex-col gap-4">
-            <h4 className={`${playfairDisplay.className} text-lg`}>Follow Us</h4>
+            <h4 className={`${playfairDisplay.className} text-lg`}>
+              Follow Us
+            </h4>
             <ul className="social links flex gap-4">
-              <li><FaFacebook  size={28} color=""/></li>
-              <li><FaInstagram size={28} color=""/></li>
-              <li><FaLinkedin  size={28} color=""/></li>
+              <li>
+                <FaFacebook size={28} color="" />
+              </li>
+              <li>
+                <FaInstagram size={28} color="" />
+              </li>
+              <li>
+                <FaLinkedin size={28} color="" />
+              </li>
             </ul>
           </div>
         </div>
         <div className="footercol4 pb-12">
           <div className="flex flex-col gap-4">
-            <h4 className={`${playfairDisplay.className} text-lg`}>Request a Quote</h4>
+            <h4 className={`${playfairDisplay.className} text-lg`}>
+              Request a Quote
+            </h4>
             <p className="text-base max-w-xs">
               Request a quote for our ushers and we would be in touch
               immediately

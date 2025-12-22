@@ -10,6 +10,18 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+.bg-overlay-openedmenu::after {
+  content :'';
+  position: absolute;
+  @apply top-0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.25;
+  z-index: 5;
+  transition: background-color 0.45s ease;
+}
+
 
 .object-positioning {
   object-position: 60% 40%;
