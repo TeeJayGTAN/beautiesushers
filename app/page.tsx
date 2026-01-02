@@ -33,48 +33,102 @@ const playfairDisplay = Playfair_Display({
 
 const slideEvents = [
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "9th Annual Middle East Water Week Conference Exhibition 2025",
+    eventLocation: "Kempinski Al Othman Hotel, Alkobar",
     eventImage: "h1.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "The Solar Week 2023",
+    eventLocation: "Raddison Blu Cairo, Egypt",
     eventImage: "h2.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "LDC CIO Summit 2024",
+    eventLocation: "Safari Park Hotel & Casino, Nairobi",
     eventImage: "h3.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "5th Edition Connected Africa Summit & 12 Edition Connected Banking Summit 2024",
+    eventLocation: "Maslow Hotel Johannesburg, South Africa",
     eventImage: "h4.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "No Code Innovation Summit 2025",
+    eventLocation: "Narcissus The Royal Hotel Riyadh, Saudi Arabia",
     eventImage: "h5.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "Global Government Cloud Summit 2025",
+    eventLocation: "Museum of the Future, Dubai",
     eventImage: "h6.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "Global Aeronautical Information Management Conference 2025",
+    eventLocation: "Transcorp Hilton, Abuja",
     eventImage: "h7.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "India Nuclear Business Platform 2023",
+    eventLocation: "Hilton, Mumbai",
     eventImage: "h8.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "African Bible Leadership initiative",
+    eventLocation: "Naf conference center abuja",
     eventImage: "h9.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "48th agm and 47th Scientific Conference of OPHTHALMOLOGical society of Nigeria",
+    eventLocation: "Radisson Blu Lagos",
     eventImage: "h10.jpeg",
   },
   {
-    eventName: "Transcorp FoodBank",
+    eventName: "ACL'S Afri-Caribbean Investment Summit, 2025",
+    eventLocation: "Transcorp Hilton, Abuja",
     eventImage: "h11.jpeg",
+  },
+  {
+    eventName: "Transcorp FoodBank",
+    eventImage: "h12.jpeg",
+  },
+  {
+    eventName: "Regtech Africa Conference & Awards 2025",
+    clientName: "Oriental Hotel, Lagos",
+    eventImage: "h13.jpeg",
+  },
+  {
+    eventName: "Transcorp FoodBank",
+    eventImage: "h14.jpeg",
+  },
+  {
+    eventName: "Water africa and East africa Building and Construction",
+    eventLocation: "Serena hotel kigali",
+    eventImage: "h15.jpeg",
+  },
+  {
+    eventName: "World Milk Day 2025",
+    clientName: "Nicon Luxury, Abuja",
+    eventImage: "h16.jpeg",
+  },
+  {
+    eventName: "International Exhibition of Pharmaceutical Medical & Healthcare Industry in Ghana 2022",
+    eventLocation: "Accra International Conference Centre, Ghana",
+    eventImage: "h17.jpeg",
+  },
+  {
+    eventName: "Nigeria institute of public relations 2022 AGM/citizen summit",
+    eventLocation: "BAT INTERNATIONAL CONFERENCE CENTER  ABUJA",
+    eventImage: "h18.jpeg",
+  },
+  {
+    eventName: "Society of Actuaries(SOA) Regional Conference 2024",
+    eventLocation: "Crown Plaza, Riyadh",
+    eventImage: "h19.jpeg",
+  },
+  {
+    eventName: "African hepatitis summit 2023",
+    eventLocation: "Nicon luxury abuja",
+    eventImage: "h20.jpeg",
   },
 ];
 
@@ -140,39 +194,15 @@ const testimonials = [
 ];
 
 import Link from "next/link";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className={`relative ${isMenuOpen ? 'bg-overlay-openedmenu' : ''}`}>
-      <header>
-        <div className="topbar w-full text-sm bg-[#c19127] text-white text-center py-2">
-          <span>beautiesushers@yahoo.co.uk</span>
-        </div>
-        <nav className="flex items-center justify-between py-2 px-8 relative">
-          <div className="navlogo w-16">
-            <Image
-              className="w-full h-full object-cover -mt-1"
-              src={"/images/busherslogo.png"}
-              width={100}
-              height={100}
-              alt="logo"
-            />
-          </div>
-          <div className="hamburger-menu cursor-pointer z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <IoClose size={48} color="white"/> : <HiOutlineMenu size={40} />}
-          </div>
-          <div className={`menu-items-container bg-[#c19127] h-[50vh] p-10 w-full rounded-bl-2xl ${isMenuOpen ? 'translate-x-10 ': 'translate-x-100'} absolute  top-0  transition-all duration-500 z-10 `}>
-            <ul className="menu-items flex flex-col w-full h-full justify-center gap-10 text-[#ffffff] text-2xl ">
-              <li><Link href="#">Home</Link></li>
-              <li><Link href="#">About</Link></li>
-              <li><Link href="#">Services</Link></li>
-              <li><Link href="#">Contact</Link></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      
       <main>
         <section className="hero">
           <Swiper
@@ -206,9 +236,11 @@ export default function Home() {
                       />
                     </div>
                     <div
-                      className={`slide-text text-2xl w-full md:w-[80vw] text-center absolute bottom-[10%] left-1/2 transform -translate-x-1/2  text-white bg-[rgba(0,0,0,0.55)] p-5  ${playfairDisplay.className}`}
+                      className={`slide-text text-lg w-full md:w-[80vw] text-center absolute bottom-[10%] left-1/2 transform -translate-x-1/2  text-white bg-[rgba(0,0,0,0.55)] p-5  ${playfairDisplay.className}`}
                     >
                       {slide.eventName}
+                      <br/>
+                      <span className="opacity-95 text-base">{slide.eventLocation}</span>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -216,7 +248,7 @@ export default function Home() {
             })}
           </Swiper>
         </section>
-        <section className="px-8 my-20">
+        <section id="about" className="px-8 my-20">
           <div className="img-welcome mb-8 rounded overflow-hidden">
             <Image
               className="w-full h-full "

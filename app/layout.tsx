@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
 
 
 const sourceSans3 = Source_Sans_3({
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body
         className={`${sourceSans3.className} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
