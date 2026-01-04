@@ -14,7 +14,7 @@ const eventWorks = [
     eventImage: "h2.jpeg",
   },
   {
-    eventName: "LDC CIO Summit 2024",
+    eventName: "IDC CIO Summit 2024",
     eventLocation: "Safari Park Hotel & Casino, Nairobi",
     eventImage: "h3.jpeg",
   },
@@ -60,10 +60,10 @@ const eventWorks = [
     eventLocation: "Transcorp Hilton, Abuja",
     eventImage: "h11.jpeg",
   },
-  {
-    eventName: "Transcorp FoodBank",
-    eventImage: "h12.jpeg",
-  },
+//   {
+//     eventName: "Transcorp FoodBank",
+//     eventImage: "h12.jpeg",
+//   },
   {
     eventName: "Regtech Africa Conference & Awards 2025",
     eventLocation: "Oriental Hotel, Lagos",

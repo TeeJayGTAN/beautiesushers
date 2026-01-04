@@ -21,12 +21,12 @@ export default function Navbar () {
           <div className="hamburger-menu cursor-pointer z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <IoClose size={48} color="white"/> : <HiOutlineMenu size={40} />}
           </div>
-          <div className={`menu-items-container bg-[#c19127] h-[50vh] p-10 w-full rounded-bl-2xl ${isMenuOpen ? 'translate-x-20 ': 'translate-x-100'} absolute  top-0  transition-all duration-500 z-10 `}>
+          <div className={`menu-items-container bg-[#c19127] h-[50vh] p-10 w-full rounded-bl-2xl ${isMenuOpen ? 'translate-x-20 ': 'translate-x-100'} absolute  top-0  transition-all duration-500 z-30 `}>
             <ul className="menu-items flex flex-col w-full h-full justify-center gap-10 text-[#ffffff] text-lg ">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="#about">About</Link></li>
+              <li><Link href="/#about">About</Link></li>
               <li><Link href="/works">Our Works</Link></li>
-              <li><Link href="#">Contact</Link></li>
+              <li><Link href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services.">Contact</Link></li>
             </ul>
           </div>
         </nav>

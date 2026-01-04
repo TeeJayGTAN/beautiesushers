@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import { IoIosStar } from "react-icons/io";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 const playfairDisplay = Playfair_Display({
   display: "swap",
   subsets: ["latin"],
@@ -56,7 +57,7 @@ export default function WorkTemplate({
           professionalism, compliance, and visual elegance at every touchpoint.
         </p>
         <div className="cta-btn text-base font-medium mt-5 py-3 px-5 w-fit flex items-center justify-center rounded text-white bg-[#c19127]">
-          Book Our Ushers
+          <Link href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services.">Book Our Ushers</Link>
         </div>
       </section>
       <hr color="#3a3a3a" className="my-12 opacity-40 mx-4" />
@@ -126,7 +127,7 @@ export default function WorkTemplate({
               immediately
             </p>
             <div className="cta-btn text-base font-medium mt-2 py-3 px-5 w-fit flex items-center justify-center rounded text-white bg-[#c19127]">
-              Book Our Ushers
+              <Link href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services.">Book Our Ushers</Link>
             </div>
           </div>
         </div>
