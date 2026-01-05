@@ -6,6 +6,14 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { IoIosStar } from "react-icons/io";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Professional Ushering Services for Corporate Events & Weddings",
+  description:
+    "Beauties Ushers provides professional ushering services for weddings, corporate events, conferences, and special occasions with excellence and attention to detail.",
+};
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

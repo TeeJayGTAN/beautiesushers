@@ -4,6 +4,15 @@ import { slugify } from "../utils/slugify";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import Image from "next/image";
 
+//seo
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Works | Event Ushering Projects & Experience",
+  description:
+    "Explore our portfolio of successful weddings, corporate events, conferences, and special occasions handled by Beauties Ushers.",
+};
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
