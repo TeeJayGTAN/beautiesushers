@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Image from "next/image";
 import Footer from "./components/Footer"
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
@@ -32,7 +32,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { useState } from "react";
+// import { useState } from "react";
 
 const playfairDisplay = Playfair_Display({
   display: "swap",
@@ -174,10 +174,10 @@ import Header from "./components/Header";
 import { brands } from "./data/brands";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className={`relative ${isMenuOpen ? "bg-overlay-openedmenu" : ""}`}>
+    <div className={`relative`}>
       <main>
         <section className="hero">
           <Swiper
