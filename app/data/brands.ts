@@ -30,6 +30,18 @@ export const brands = [
         imgUrl: 'acis_logo.png'
     },
     {
-        imgUrl: 'gaim_logo.jpg'
+        imgUrl: 'ace_logo.jpg'
+    },
+    {
+        imgUrl: 'energyte_logo.jpg'
+    },
+    {
+        imgUrl: 'idc_logo.png'
+    },
+    {
+        imgUrl: 'plexus_logo.jpg'
+    },
+    {
+        imgUrl: 'spartans_logo.png'
     },
 ]

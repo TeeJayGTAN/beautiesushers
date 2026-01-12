@@ -22,22 +22,22 @@ const services = [
   {
     img: "h8.jpeg",
     title: "Conference Assistants",
-    text: "We know the importance of projecting a positive and professional corporate image of your brand to delegates and speakers. Our experienced and professional Conference Assistants would manage the efficient running of registration, badge scanning, etc. at your conference.",
+    text: "Project a flawless corporate image from the moment your delegates arrive. Our Conference Assistants are masters of efficiency, seamlessly managing registration, badge scanning, and logistics to ensure your event runs with clockwork precision.",
   },
   {
     img: "h9.jpeg",
-    title: "Hostesses",
-    text: "Want to give your guests and clients a VIP and professional impression? Our Hostesses are not only beautiful, but friendly, professional, proactive and attentive to details. They support both the hospitality and the logistics of your event, welcoming guests and ensuring they’re well catered for.",
+    title: "VIP Hostesses",
+    text: "Elevate your guest experience with our elite VIP Hostesses. Selected for their poise, intelligence, and impeccable grooming, they provide a world-class welcome, ensuring your VIPs and clients feel exclusively catered to throughout your event.",
   },
   {
-    img: "h10.jpeg",
+    img: "exhibition.jpg",
     title: "Exhibition Staff",
-    text: "Looking to generate new leads at exhibitions or tradeshows? Our intelligent Exhibition Staff would interact with show visitors, distribute samples and marketing material and capture data of prospects. With English and French speaking staff, they orient prospects at your booth on your products and offers.",
+    text: "Maximize your ROI at trade shows with our intelligent Exhibition Staff. Expertly trained to engage visitors, capture data, and articulate your brand's value proposition in both English and French, they turn foot traffic into qualified leads.",
   },
   {
     img: "h11.jpeg",
-    title: "Multilingual Staff",
-    text: "Want to ensure smooth communication between you and the attendants at international conferences, trade shows and product launches? Our multilingual event staff would welcome and communicate with guests in French, German, Spanish and Russian, in addition to English language.",
+    title: "Multilingual Ambassadors",
+    text: "Break down language barriers at international summits. Our Multilingual Ambassadors are fluent in French, German, Spanish, Russian, and English, ensuring seamless communication and a welcoming atmosphere for your diverse global audience.",
   },
 ];
 
@@ -67,16 +67,18 @@ export default function Home() {
                 Where Beauty Meets Professionalism
               </div>
               <div className={`body-text mt-5 text-[#3a3a3a] text-lg leading-relaxed`}>
-                At Beauties Ushers, we understand that first impressions matter. Our
-                team of carefully selected and professionally trained ushers bring
-                poise, warmth, and attention to detail to every event. Whether it’s
-                a grand wedding, corporate function, church program, or private
-                celebration, we ensure your guests feel welcomed, guided, and valued
-                from start to finish
+                At Beauties Ushers, we understand that excellence knows no borders.
+                As a leading international event staffing agency, our professionally
+                trained team brings poise, warmth, and precision to every occasion.
+                With a proven track record across West, East, South, and North Africa,
+                as well as Asia, we deliver world-class hospitality tailored to your
+                needs. Whether it’s a grand wedding, corporate summit, church program,
+                or private celebration, we ensure your guests feel welcomed, guided,
+                and valued—from start to finish.
               </div>
               <div className="cta-btn text-base font-medium mt-8 py-3 px-8 w-fit flex items-center justify-center rounded text-white bg-[#c19127] hover:bg-[#a67c1f] transition-colors">
                 <Link href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services.">
-                  Book Our Ushers
+                  Secure Your Team Now
                 </Link>
               </div>
             </div>
@@ -119,7 +121,7 @@ export default function Home() {
           </div>
           <div className="cta-btn text-base font-medium mt-5 py-3 px-8 w-fit flex items-center justify-center rounded text-white bg-[#c19127] hover:bg-[#a67c1f] transition-colors">
             <Link href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services.">
-              Book Our Ushers
+              Request Priority Booking
             </Link>
           </div>
         </section>

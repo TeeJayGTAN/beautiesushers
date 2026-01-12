@@ -1,37 +1,37 @@
 export const testimonials = [
   {
     img: "h3.jpeg",
-    clientName: "Sarah Joseph",
-    clientDesignation: "COO, Head of Operations",
+    clientName: "Dr. Sarah J",
+    clientDesignation: "Event Director, Global Tech Summit",
     clientTestimony:
-      "We know the importance of projecting a positive and professional corporate image of your brand to delegates and speakers. Our experienced and professional Conference Assistants would manage the efficient running of registration, badge scanning, etc. at your conference.",
+      "Beauties Ushers brought a level of sophistication to our summit that was simply world-class. Their team was proactive, eloquent, and handled our VIP delegates with absolute grace. They are now our go-to agency for all African events.",
   },
   {
     img: "h1.jpeg",
-    clientName: "Sheikh Ibrahim Jafar",
-    clientDesignation: "COO, Head of Operations",
+    clientName: "Sheikh Ibrahim A",
+    clientDesignation: "Chairman, Middle East Trade Expo",
     clientTestimony:
-      "We know the importance of projecting a positive and professional corporate image of your brand to delegates and speakers. Our experienced and professional Conference Assistants would manage the efficient running of registration, badge scanning, etc. at your conference.",
+      "I was thoroughly impressed by the professionalism. The multilingual staff bridged the communication gap effortlessly for our international attendees. Truly a five-star service that reflects well on our own brand.",
   },
   {
     img: "h6.jpeg",
-    clientName: "Jonathan Presley",
-    clientDesignation: "COO, Head of Operations",
+    clientName: "Mr. Jonathan O",
+    clientDesignation: "CEO, West Africa Energy Forum",
     clientTestimony:
-      "We know the importance of projecting a positive and professional corporate image of your brand to delegates and speakers. Our experienced and professional Conference Assistants would manage the efficient running of registration, badge scanning, etc. at your conference.",
+      "Reliability and excellence. Those are the two words I would use. We didn't have to worry about a single thing regarding guest coordination. The Beauties Ushers team operated with military precision but with a warm smile.",
   },
   {
     img: "h11.jpeg",
-    clientName: "Tony Olumelu",
-    clientDesignation: "COO, Head of Operations",
+    clientName: "Mr. Tony D",
+    clientDesignation: "Marketing Head, Pan-African Finance",
     clientTestimony:
-      "We know the importance of projecting a positive and professional corporate image of your brand to delegates and speakers. Our experienced and professional Conference Assistants would manage the efficient running of registration, badge scanning, etc. at your conference.",
+      "From the registration desk to the gala dinner, their presence elevated the entire atmosphere. It is rare to find an agency that understands the nuances of high-profile corporate hospitality so well.",
   },
   {
     img: "h10.jpeg",
-    clientName: "John Abraham",
-    clientDesignation: "COO, Head of Operations",
+    clientName: "Dr. Scott M",
+    clientDesignation: "Director, International Medical Conference",
     clientTestimony:
-      "We know the importance of projecting a positive and professional corporate image of your brand to delegates and speakers. Our experienced and professional Conference Assistants would manage the efficient running of registration, badge scanning, etc. at your conference.",
+      "Exceptional service! They handled a crowd of over 2,000 delegates seamlessly. The poise and intelligence of the staff were remarked upon by many of our speakers. Highly recommended for any serious organization.",
   },
 ];

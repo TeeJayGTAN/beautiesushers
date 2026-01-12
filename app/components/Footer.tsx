@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaCalendarCheck } from "react-icons/fa";
 import Link from "next/link";
 import { address } from "../data/address";
 
@@ -26,9 +26,8 @@ export default function Footer() {
             />
           </div>
           <div className="writeup text-base text-[#3a3a3a] leading-relaxed">
-            At Beauties Ushers, we understand that first impressions matter. Our
-            team of carefully selected and professionally trained ushers bring
-            poise, warmth, and attention to detail to every event.
+            Excellence knows no borders. As a leading international event staffing agency,
+            we bring poise, warmth, and precision to events across Africa and Asia.
           </div>
         </div>
 
@@ -54,12 +53,22 @@ export default function Footer() {
         <div className="footercol3 flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <h4 className={`${playfairDisplay.className} text-xl font-semibold`}>Contact Us</h4>
-            <ul className="text-base text-[#3a3a3a] flex flex-col gap-2">
-              <li>+234 802 432 3232</li>
-              <li>beautiesushers@yahoo.co.uk</li>
+            <ul className="text-base text-[#3a3a3a] flex flex-col gap-3">
+              <li className="flex items-center gap-3">
+                <FaPhoneAlt className="text-[#c19127]" />
+                <span>+234 703 687 1870</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaEnvelope className="text-[#c19127]" />
+                <span>beautiesushers@yahoo.co.uk</span>
+              </li>
               <li>
-                <Link href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services." className="hover:text-[#c19127] transition-colors underline">
-                  Chat On Whatsapp
+                <Link
+                  href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services."
+                  className="flex items-center gap-3 hover:text-[#c19127] transition-colors underline"
+                >
+                  <FaWhatsapp className="text-[#c19127] text-lg" />
+                  <span>Chat On Whatsapp</span>
                 </Link>
               </li>
             </ul>
@@ -70,10 +79,16 @@ export default function Footer() {
                 <h4 className={`${playfairDisplay.className} text-lg font-medium border-b border-[#c19127] w-fit pb-1`}>
                   {addr.officeName}
                 </h4>
-                <ul className="text-base text-[#3a3a3a]">
-                  <li className="mb-1">{addr.address}</li>
+                <ul className="text-base text-[#3a3a3a] mt-2 flex flex-col gap-2">
+                  <li className="mb-1 flex items-start gap-3">
+                    <FaMapMarkerAlt className="text-[#c19127] mt-1 shrink-0" />
+                    <span>{addr.address}</span>
+                  </li>
                   {addr.phone && (
-                    <li><a href={`tel:${addr.phone}`} className="hover:text-[#c19127]">{addr.phone}</a></li>
+                    <li className="flex items-center gap-3">
+                      <FaPhoneAlt className="text-[#c19127] shrink-0" />
+                      <a href={`tel:${addr.phone}`} className="hover:text-[#c19127]">{addr.phone}</a>
+                    </li>
                   )}
                 </ul>
               </div>
@@ -102,11 +117,12 @@ export default function Footer() {
               Request a Quote
             </h4>
             <p className="text-base text-[#3a3a3a] leading-relaxed">
-              Request a quote for our ushers and we would be in touch immediately
+              Our calendar fills up quickly. Request a proposal today to secure your dates.
             </p>
             <div className="cta-btn text-base font-medium py-3 px-6 w-fit flex items-center justify-center rounded-full text-white bg-[#c19127] hover:bg-[#a67c1f] transition-colors shadow-md">
-              <Link href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services.">
-                Book Our Ushers
+              <Link href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services." className="flex items-center gap-2">
+                <FaCalendarCheck />
+                <span>Start Your Booking</span>
               </Link>
             </div>
           </div>

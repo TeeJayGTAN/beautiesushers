@@ -136,12 +136,11 @@ export default function WorkPage() {
       <div className="max-w-7xl mx-auto">
         <section className={`my-16 text-center mx-auto text-[#3a3a3a] px-4 max-w-4xl`}>
           <p className="text-lg md:text-xl leading-relaxed">
-            Our forte lies in international and luxury Events. We have staffed
-            West Africa conferences and exhibitions in Nigeria working with
-            renowned event organizers, premium brands and businesses from UK, USA,
-            Italy, Russia, France, Germany, China, Austria, Poland, Spain, UAE,
-            Turkey, Saudi Arabia, Qatar, Serbia, Bulgaria, Pakistan, Vietnam,
-            Egypt, Hong Kong, Indonesia, India, South Africa, Kenya and Nigeria
+            Our expertise transcends borders. We have successfully staffed major international
+            summits and luxury events across the globe, serving premium brands and
+            governments from the UK, USA, Europe, Asia, and the Middle East. From
+            West Africa to the exhibition halls of Dubai and Mumbai, our signature
+            excellence remains constant.
           </p>
         </section>
 

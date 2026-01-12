@@ -62,7 +62,7 @@ export default function AboutPage() {
     "h7.jpeg",
     "h10.jpeg",
     "h11.jpeg",
-    "h16.jpeg",  
+    "h16.jpeg",
   ];
 
   return (
@@ -76,16 +76,14 @@ export default function AboutPage() {
           priority
           className="object-cover opacity-50"
         />
-        <div className="relative z-10 text-center px-4 max-w-2xl">
+        <div className="relative z-10 text-center px-4 max-w-3xl">
           <h1
             className={`${playfairDisplay.className} text-white text-3xl md:text-4xl mb-3`}
           >
-            About Beauties Ushers & Hostesses
+            Setting the Global Standard in Event Staffing
           </h1>
           <p className="text-white text-sm md:text-base">
-            A professional ushering and event management company delivering
-            elegance, structure, and exceptional guest experiences across global
-            events.
+            The premier choice for luxury weddings, corporate summits, and international conferences across Africa and Asia.
           </p>
         </div>
       </section>
@@ -93,11 +91,11 @@ export default function AboutPage() {
       {/* INTRO */}
       <section className="max-w-5xl mx-auto px-4 my-14 text-center text-[#3a3a3a]">
         <p className="text-base md:text-lg leading-relaxed">
-          Beauties Ushers & Hostesses is a full-service professional ushering
-          and event support company specializing in corporate events,
-          international conferences, exhibitions, award ceremonies, and private
-          celebrations. Our structured approach, trained personnel, and
-          attention to detail guarantee maximum client satisfaction.
+          Beauties Ushers & Hostesses is a world-class event support agency specializing in
+          high-profile corporate events, international summits, diplomatic gatherings, and
+          luxury private celebrations. Operating seamlessly across <strong>West, East, South, and North Africa, as well as Asia</strong>,
+          we bring a signature blend of elegance, structure, and military-precision coordination
+          that guarantees your event is nothing short of spectacular.
         </p>
       </section>
 
@@ -141,9 +139,9 @@ export default function AboutPage() {
             </h2>
           </div>
           <p className="text-[#3a3a3a] text-sm md:text-base">
-            To be a trusted global ushering and event support company known for
-            delivering world-class coordination and outstanding guest
-            experiences.
+            To be the undisputed global leader in event staffing, recognized internationally
+            for elevating the standard of hospitality and guest experience at the world's most
+            prestigious gatherings.
           </p>
         </div>
         <div className="p-6 md:p-8 rounded bg-[#faf7f2]">
@@ -154,9 +152,9 @@ export default function AboutPage() {
             </h2>
           </div>
           <p className="text-[#3a3a3a] text-sm md:text-base">
-            We combine experienced personnel, strategic planning, and flawless
-            execution to deliver professional ushering services that exceed
-            expectations and ensure client satisfaction.
+            We deploy exceptionally trained personnel and strategic execution plans to
+            deliver a seamless, five-star experience that enhances your brand image
+            and leaves a lasting impression of excellence on every guest.
           </p>
         </div>
       </section>
@@ -293,46 +291,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* LEADERSHIP */}
-      <section className="max-w-6xl mx-auto px-4 my-20 grid md:grid-cols-2 gap-10 items-center">
-        <div className="relative h-[260px] md:h-[340px] rounded overflow-hidden">
-          <Image
-            src="/images/usherimg.png"
-            alt="Beauty A A CEO of Beauties Ushers"
-            fill
-            className="object-cover object-top"
-          />
-        </div>
-        <div>
-          <h2
-            className={`${playfairDisplay.className} text-xl md:text-2xl mb-4`}
-          >
-            Leadership
-          </h2>
-          <p className="text-[#3a3a3a] text-sm md:text-base leading-relaxed">
-            Beauties Ushers & Hostesses is led by Beauty A. A, a seasoned event
-            professional with over 8 years of experience delivering successful
-            corporate and international events across Africa, the Middle East,
-            and beyond.
-          </p>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="bg-[#c19127] text-white text-center py-14 px-4">
-        <h2 className={`${playfairDisplay.className} text-xl md:text-2xl mb-4`}>
-          Let’s Make Your Event Exceptional
-        </h2>
-        <p className="mb-6 text-sm md:text-base max-w-xl mx-auto">
-          Partner with Beauties Ushers & Hostesses for professional ushering,
-          seamless coordination, and a premium guest experience.
-        </p>
-        <Link
-          href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services."
-          className="inline-block bg-white text-[#c19127] px-6 py-3 rounded font-medium"
-        >
-          Book Our Ushers
-        </Link>
+      <section className="relative bg-gradient-to-br from-[#b0841f] via-[#c19127] to-[#e4b350] text-white text-center py-24 px-4 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h2 className={`${playfairDisplay.className} text-2xl md:text-4xl font-bold mb-6 leading-tight drop-shadow-sm`}>
+            Let’s Make Your Event Exceptional
+          </h2>
+          <p className="mb-10 text-base md:text-lg font-light opacity-95 max-w-2xl mx-auto leading-relaxed">
+            Partner with Beauties Ushers & Hostesses for professional ushering,
+            seamless coordination, and a premium guest experience that leaves a lasting legacy.
+          </p>
+          <Link
+            href="https://wa.me/+2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services."
+            className="inline-block bg-white text-[#c19127] text-lg font-semibold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+          >
+            Book Our Ushers
+          </Link>
+        </div>
       </section>
 
       <Footer />
