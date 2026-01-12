@@ -101,7 +101,13 @@ export default function Footer() {
                 <FaFacebook size={24} className="hover:text-[#c19127] cursor-pointer transition-colors" />
               </li>
               <li>
-                <FaInstagram size={24} className="hover:text-[#c19127] cursor-pointer transition-colors" />
+                <Link
+                  href="https://www.instagram.com/direct/new/?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.%20Please%20share%20more%20details.%20Thank%20you.&username=@beauties_ushers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram size={24} className="hover:text-[#c19127] cursor-pointer transition-colors" />
+                </Link>
               </li>
               <li>
                 <FaLinkedin size={24} className="hover:text-[#c19127] cursor-pointer transition-colors" />
