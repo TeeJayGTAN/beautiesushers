@@ -55,7 +55,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="flex items-center justify-between py-2 px-8 relative z-50">
+    <nav className="flex items-center justify-between py-2 px-8 relative z-50 max-w-7xl mx-auto w-full">
       {/* Logo */}
       <div className="w-16">
         <Image
@@ -67,33 +67,66 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Toggle with rotation */}
+      {/* Desktop Menu */}
+      <div className="hidden md:flex items-center gap-8">
+        <ul className="flex items-center gap-8 text-base font-medium">
+          {menuItems.map((item) => {
+            const isActive =
+              !item.isCTA &&
+              (item.href === pathname ||
+                (item.href !== "/" && pathname.startsWith(item.href)));
+
+            if (item.isCTA) return null;
+
+            return (
+              <li key={item.label}>
+                <Link
+                  href={item.href}
+                  className={`text-[#171717] hover:text-[#c19127] transition-colors ${isActive ? "border-b-2 border-[#c19127]" : ""
+                    }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        {/* CTA Button */}
+        <Link
+          href="https://wa.me/2347036871870?text=Hello%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20ushering%20services."
+          className="flex items-center gap-2 bg-[#c19127] text-white px-5 py-2 rounded-full font-semibold shadow-md hover:bg-[#a67c1f] transition-all"
+        >
+          <FaWhatsapp size={18} />
+          Contact Us
+        </Link>
+      </div>
+
+      {/* Mobile Toggle */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
-        className={`z-50 transition-transform duration-300 ${
-          isMenuOpen ? "rotate-180" : "rotate-0"
-        }`}
+        className={`md:hidden z-50 transition-transform duration-300 ${isMenuOpen ? "rotate-180" : "rotate-0"
+          }`}
       >
         {isMenuOpen ? (
           <IoClose size={44} className="text-white" />
         ) : (
-          <HiOutlineMenu size={40} />
+          <HiOutlineMenu size={40} className="text-[#171717]" />
         )}
       </button>
 
       {/* Overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-30"
+          className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-30"
           onClick={closeMenu}
         />
       )}
 
-      {/* Menu Panel */}
+      {/* Mobile Menu Panel */}
       <div
         ref={menuRef}
-        className={`fixed top-0 left-0 right-0 z-40 bg-[#c19127] rounded-b-2xl p-10
+        className={`md:hidden fixed top-0 left-0 right-0 z-40 bg-[#c19127] rounded-b-2xl p-10
         transform transition-transform duration-500 ease-in-out
         ${isMenuOpen ? "translate-y-0" : "-translate-y-full"}`}
       >
@@ -120,9 +153,8 @@ export default function Navbar() {
                          font-semibold shadow-md transition-all
                          ${isMenuOpen ? "animate-pulse" : ""}
                          hover:bg-[#f5e6b3]`
-                      : `text-white hover:opacity-80 ${
-                          isActive ? "border-b-2 border-white pb-1" : ""
-                        }`
+                      : `text-white hover:opacity-80 ${isActive ? "border-b-2 border-white pb-1" : ""
+                      }`
                   }
                 >
                   {item.isCTA && <FaWhatsapp size={18} />}
