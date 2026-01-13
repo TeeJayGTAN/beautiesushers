@@ -20,9 +20,9 @@ export const brands = [
     {
         imgUrl: 'wmild_logo.jpg'
     },
-    // {
-    //     imgUrl: 'wmild_logo.jpeg'
-    // },
+    {
+        imgUrl: 'aquarian_logo.png'
+    },
     {
         imgUrl: 'abli_logo.jpg'
     },

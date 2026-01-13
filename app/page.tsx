@@ -25,7 +25,7 @@ const services = [
     text: "Project a flawless corporate image from the moment your delegates arrive. Our Conference Assistants are masters of efficiency, seamlessly managing registration, badge scanning, and logistics to ensure your event runs with clockwork precision.",
   },
   {
-    img: "h9.jpeg",
+    img: "h11.jpeg",
     title: "VIP Hostesses",
     text: "Elevate your guest experience with our elite VIP Hostesses. Selected for their poise, intelligence, and impeccable grooming, they provide a world-class welcome, ensuring your VIPs and clients feel exclusively catered to throughout your event.",
   },
@@ -35,7 +35,7 @@ const services = [
     text: "Maximize your ROI at trade shows with our intelligent Exhibition Staff. Expertly trained to engage visitors, capture data, and articulate your brand's value proposition in both English and French, they turn foot traffic into qualified leads.",
   },
   {
-    img: "h11.jpeg",
+    img: "h1.jpeg",
     title: "Multilingual Ambassadors",
     text: "Break down language barriers at international summits. Our Multilingual Ambassadors are fluent in French, German, Spanish, Russian, and English, ensuring seamless communication and a welcoming atmosphere for your diverse global audience.",
   },
@@ -139,9 +139,9 @@ export default function Home() {
             <div className="nation p-3 bg-gray-50 rounded">Uganda</div>
             <div className="nation p-3 bg-gray-50 rounded">South-Africa</div>
             <div className="nation p-3 bg-gray-50 rounded">Malaysia</div>
-            <div className="nation p-3 bg-gray-50 rounded">Malawi</div>
+            <div className="nation p-3 bg-gray-50 rounded">Qatar</div>
             <div className="nation p-3 bg-gray-50 rounded">India</div>
-            <div className="nation p-3 bg-gray-50 rounded">Zimbabwe</div>
+            <div className="nation p-3 bg-gray-50 rounded">Saudi Arabia</div>
             <div className="nation p-3 bg-gray-50 rounded">Indonesia</div>
           </div>
 
